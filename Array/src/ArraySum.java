@@ -12,7 +12,7 @@ public class ArraySum {
 
     public static void main(String[] args) {
         System.out.println("arrays sum");
-        int[] arr={1,2,3};
+        int[] arr={1,2,3,4};
         int sum = addNumbers(arr);
         System.out.println("sum of given array is "+sum);
 

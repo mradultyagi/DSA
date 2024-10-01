@@ -1,5 +1,6 @@
 import java.util.*;
-public class FindingMissing2 {
+public class findingallmissing {
+    int [] arr={6,4,3,2,1};
     public List<Integer> findingmissingelements(int[] arr){
         int i=0;
         while(i<arr.length){

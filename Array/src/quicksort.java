@@ -3,8 +3,9 @@ import java.util.*;
 public class quicksort {
     public static void main(String[] args) {
         int [] arr={6,5,4,3,2,1};
-        sort(arr,0,arr.length-1);
-        System.out.println(Arrays.toString(arr));
+//        sort(arr,0,arr.length-1);
+//        System.out.println(Arrays.toString(arr));
+        Arrays.sort(arr);
 
     }
     static void sort(int[] nums,int low,int high){

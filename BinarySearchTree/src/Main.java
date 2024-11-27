@@ -1,16 +1,9 @@
-import com.sun.source.tree.BinaryTree;
-
-import java.util.Scanner;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        first tree = new first();
-        tree.populate(sc);
-        tree.display();
+        int[] arr = {3, 8, 6, 7, -2, -8, 4, 9};
+        SegmentTree tree = new SegmentTree(arr);
+        // tree.display();
 
-
+        System.out.println(tree.query(1, 6));
     }
 }

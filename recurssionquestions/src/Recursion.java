@@ -9,7 +9,10 @@ public class Recursion {
 //        System.out.println(isPalindraome(str,x,e));
 //        System.out.println( maxpiece(23,11,9,12));
 //        subset("abc","",0);
-        toh(8,'A','B','C');
+//        toh(8,'A','B','C');
+//        int arr[] ={10,20,15};
+//        int n = arr.length;
+//        System.out.println(countsubset(arr,n,35));
     }
     static void fun(int n){
         if(n==0){
@@ -72,6 +75,20 @@ public class Recursion {
         toh(n-1,A,C,B);
         System.out.println("move "+n+" disc from "+A+" to "+C);
         toh(n-1,B,A,C);
+   }
+   static int jes(int n,int k){
+        if(n==1){
+            return 0;
+        }
+        else{
+            return (jes(n-1,k)+k)%n;
+        }
+   }
+   static int countsubset(int arr[],int n,int sum){
+        if(n==0){
+            return(sum==0) ? 1 : 0;
+        }
+        return countsubset(arr,n-1,sum)+countsubset(arr,n-1,sum-arr[n-1]);
    }
 
 }
